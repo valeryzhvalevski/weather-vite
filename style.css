@@ -10,7 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url('./img/bg.png');
+  background-image: url("./img/bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,7 +20,7 @@ body {
   width: 500px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.436);
-  backdrop-filter: blur(10px) brightness(80%);
+  backdrop-filter: blur(3px) brightness(80%);
 }
 .cityInfo {
   margin: 20px;
@@ -33,16 +33,39 @@ body {
 .temp {
   font-weight: bold;
   font-size: 2rem;
-  color: #ffffffcf;
+  color: #ffffffb2;
+  transition: all 0.5s ease-in-out;
 }
 .city,
 .text {
   font-size: 1.2rem;
-  color: #ffffffcf;
+  color: #ffffffb2;
+  transition: all 0.5s ease-in-out;
 }
 .ico {
   height: 55px;
 }
 img {
   height: 100%;
+}
+.minsk:hover {
+  .temp-minsk,
+  .city-minsk,
+  .text-minsk {
+    color: white;
+  }
+}
+.warsaw:hover {
+  .temp-warsaw,
+  .city-warsaw,
+  .text-warsaw {
+    color: white;
+  }
+}
+.kyiv:hover {
+  .temp-kyiv,
+  .city-kyiv,
+  .text-kyiv {
+    color: white;
+  }
 }
