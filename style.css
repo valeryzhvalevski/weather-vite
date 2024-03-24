@@ -9,17 +9,39 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('./img/bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.box{
+.box {
   width: 500px;
   border-radius: 20px;
-  border: 1px solid;
+  border: 1px solid rgba(255, 255, 255, 0.436);
+  backdrop-filter: blur(10px) brightness(80%);
 }
 .cityInfo {
   margin: 20px;
 }
-.warsaw{
-  border-top: 1px solid;
-  border-bottom: 1px solid;
+.warsaw {
+  border-top: 1px solid rgba(255, 255, 255, 0.347);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.347);
   padding: 20px 0;
+}
+.temp {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #ffffffcf;
+}
+.city,
+.text {
+  font-size: 1.2rem;
+  color: #ffffffcf;
+}
+.ico {
+  height: 55px;
+}
+img {
+  height: 100%;
 }
