@@ -33,3 +33,44 @@ async function updateWeather() {
 }
 
 updateWeather();
+
+///////
+const body = document.querySelector('body');
+const minsk = document.querySelector('.minsk');
+const warsaw = document.querySelector('.warsaw');
+const kyiv = document.querySelector('.kyiv');
+
+let timeoutId = null;
+
+minsk.addEventListener('mouseover', function(){
+  clearTimeout(timeoutId);
+  body.style.backgroundImage = "url('./img/minsk.webp')";
+});
+
+minsk.addEventListener('mouseout', function(){
+  timeoutId = setTimeout(function() {
+    body.style.backgroundImage = "url('./img/bg.png')";
+  }, 2000); 
+});
+
+warsaw.addEventListener('mouseover', function(){
+  clearTimeout(timeoutId);
+  body.style.backgroundImage = "url('./img/warsaw.jpeg')";
+});
+
+warsaw.addEventListener('mouseout', function(){
+  timeoutId = setTimeout(function() {
+    body.style.backgroundImage = "url('./img/bg.png')";
+  }, 2000); 
+});
+
+kyiv.addEventListener('mouseover', function(){
+  clearTimeout(timeoutId);
+  body.style.backgroundImage = "url('./img/kyiv.jpeg')";
+});
+
+kyiv.addEventListener('mouseout', function(){
+  timeoutId = setTimeout(function() {
+    body.style.backgroundImage = "url('./img/bg.png')";
+  }, 2000); 
+});

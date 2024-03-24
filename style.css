@@ -14,6 +14,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: background-image 0.5s ease-in-out;
 }
 .box {
   width: 500px;
